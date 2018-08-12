@@ -1,10 +1,21 @@
 import React, { Component } from 'react'
+import ContentHeader from '../common/template/ContentHeader';
+import Content from '../common/template/Content';
+import ValueBox from '../common/widget/ValueBox';
+import Row from '../common/layout/row';
 
 class Dashboard extends Component {
     render() {
         return (
             <div>
-                <h1> Dashboard </h1>
+                <ContentHeader title="Dashboard" small="Versão 1.0"/>
+                <Content>
+                    <Row>
+                        <ValueBox cols="12 6 4 4" color="green" icon="bank" value="R$ 10" text="Total de créditos" />
+                        <ValueBox cols="12 6 4 4" color="red" icon="credit-card" value="R$ 10" text="Total de débitos" />
+                        <ValueBox cols="12 6 4 4" color="blue" icon="money" value="R$ 0" text="Valor Consolidado" />                                                                          
+                    </Row>                    
+                </Content>   
             </div>            
         );
     }
