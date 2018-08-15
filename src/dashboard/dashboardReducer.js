@@ -10,4 +10,3 @@ export default (state = INITITAL_STATE, action) => {
             return state
     }
 }
-//aula 22
