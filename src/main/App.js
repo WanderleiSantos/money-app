@@ -8,6 +8,7 @@ import Footer from '../common/template/Footer';
 import { Switch, Route } from 'react-router-dom';
 import Dashboard from '../dashboard/Dashboard';
 import BillingCycle from '../billingCycle/BillingCycle';
+import Mensages from '../common/msg/Mensages';
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
               </Switch>                         
           </div>
         <Footer />
+        <Mensages />
     </div>
     );
   }
